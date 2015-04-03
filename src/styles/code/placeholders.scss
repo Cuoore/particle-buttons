@@ -1,0 +1,29 @@
+%button-theming-radio-s {
+  border-radius: $button-border-radius;
+  border-style: solid;
+  border-width: 1px;
+}
+
+%buttons {
+  font-size: $button-font-size;
+  margin: $button-margin;
+  padding: $button-padding;
+  letter-spacing: .3px;
+  cursor: pointer;
+}
+
+%buttons--blue {
+  @extend %buttons;
+  @extend %button-theming-radio-s;
+  @include button-theming($button-blue);
+}
+
+%buttons--grey {
+  @extend %buttons;
+  @extend %button-theming-radio-s;
+  @include button-theming($button-grey);
+}
+
+%buttons--capitalize {
+  text-transform: capitalize;
+}

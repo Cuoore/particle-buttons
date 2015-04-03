@@ -1,0 +1,9 @@
+@mixin button-theming($map-color) {
+  border-color: map-get($map-color, "border-color");
+  background: map-get($map-color, "background");
+  color: map-get($map-color, "color");
+  &:hover {
+    background: map-get($map-color, "background-hover");
+    color: map-get($map-color, "color-hover");
+  }
+}

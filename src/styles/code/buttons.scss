@@ -1,0 +1,15 @@
+.button {
+  @extend %buttons;
+}
+
+.button--blue {
+  @extend %buttons--blue;
+}
+
+.button--grey {
+  @extend %buttons--grey;
+}
+
+.button--capitalize {
+  @extend %buttons--capitalize;
+}

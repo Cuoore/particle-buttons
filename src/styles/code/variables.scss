@@ -1,1 +1,26 @@
-$marginA: 3em;
+/**** {{button}} ****/
+$button-size: $theme-button-size;
+$button-font-size: $button-size;
+$button-border-radius: $theme-button-border-radius;
+$button-padding: $theme-button-padding;
+$button-margin: $theme-button-margin;
+
+/**** {{button--blue}} ****/
+$button-blue-color-background: $theme-button-blue-color-background;
+$button-blue-color-background-hover: darken($theme-button-blue-color-background, 5%);
+$button-blue-color-text: $theme-button-blue-color-text;
+$button-blue-color-text-hover: $theme-button-blue-color-text;
+$button-blue-color-border: $button-blue-color-background;
+
+/**** {{button--blue--map}} ****/
+$button-blue: (border-color: $button-blue-color-border, background: $button-blue-color-background, color: $button-blue-color-text, background-hover: $button-blue-color-background-hover, color-hover: $button-blue-color-text-hover);
+
+/**** {{button--grey}} ****/
+$button-grey-color-background: $theme-button-grey-color-background;
+$button-grey-color-background-hover: darken($theme-button-grey-color-background, 5%);
+$button-grey-color-text: $theme-button-grey-color-text;
+$button-grey-color-text-hover: darken($theme-button-grey-color-text, 15%);
+$button-grey-color-border: $button-grey-color-background;
+
+/**** {{button--grey--map}} ****/
+$button-grey: (border-color: $button-grey-color-border, background: $button-grey-color-background, color: $button-grey-color-text, background-hover: $button-grey-color-background-hover, color-hover: $button-grey-color-text-hover);
