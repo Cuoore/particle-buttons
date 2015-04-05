@@ -1,0 +1,21 @@
+{
+  "name": "particle-buttons",
+  "version": "0.0.1-0",
+  "authors": [
+    "Javier Lopez de Ancos <@javierland>"
+  ],
+  "description": "A buttons collections",
+  "license": "MIT",
+  "homepage": "http://javierlopezdeancos.github.io/higgsboson/",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "particle-theme":"git@github.com:javierlopezdeancos/particle-theme.git#master"
+  },
+  "devDependencies":{
+    "particle-higgsboson":"git@github.com:javierlopezdeancos/higgsboson.git#master"
+  } 
+}
