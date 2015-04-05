@@ -1,5 +1,6 @@
 .DS_Store
 .temp
+dev
 node_modules
 bower_components
 dist
