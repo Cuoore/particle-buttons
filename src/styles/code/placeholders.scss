@@ -18,18 +18,18 @@
   @include button-theming($button-map-primary-color);
 }
 
-%buttons--terciary-color {
+%buttons--tertiary-color {
   @extend %buttons;
   @extend %button-theming-border;
-  @include button-theming($button-map-terciary-color);
+  @include button-theming($button-map-tertiary-color);
 }
 
-%buttons--primary-color--capitalize {
+%buttons--primary-color-capitalize {
   @extend %buttons--primary-color;
   text-transform: capitalize;
 }
 
-%buttons--terciary-color--capitalize {
-  @extend %buttons--terciary-color;
+%buttons--tertiary-color-capitalize {
+  @extend %buttons--tertiary-color;
   text-transform: capitalize;
 }
