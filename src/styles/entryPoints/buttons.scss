@@ -1,7 +1,11 @@
-/**** {{dependencies}} ****/
-@import "../../../bower_components/particle-theme/src/styles/entryPoints/config.scss";
+// dependencies
 
-/**** {{components}} ****/
+// theme
+@import "../../../bower_components/particle-theme/src/styles/code/colors.scss";
+@import "../../../bower_components/particle-theme/src/styles/code/sizes.scss";
+@import "../../../bower_components/particle-theme/src/styles/code/buttons.scss";
+
+// particles
 @import "../code/variables";
 @import "../code/mixins";
 @import "../code/placeholders";

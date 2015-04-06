@@ -2,14 +2,18 @@
   @extend %buttons;
 }
 
-.button--blue {
-  @extend %buttons--blue;
+.button--primary-color {
+  @extend %buttons--primary-color;
 }
 
-.button--grey {
-  @extend %buttons--grey;
+.button--terciary-color {
+  @extend %buttons--terciary-color;
 }
 
-.button--capitalize {
-  @extend %buttons--capitalize;
+.button--primary-color--capitalize {
+  @extend %buttons--primary-color--capitalize;
+}
+
+.button--terciary-color--capitalize {
+  @extend %buttons--terciary-color--capitalize;
 }

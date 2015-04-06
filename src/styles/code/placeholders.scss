@@ -1,4 +1,4 @@
-%button-theming-radio-s {
+%button-theming-border {
   border-radius: $button-border-radius;
   border-style: solid;
   border-width: 1px;
@@ -12,18 +12,24 @@
   cursor: pointer;
 }
 
-%buttons--blue {
+%buttons--primary-color {
   @extend %buttons;
-  @extend %button-theming-radio-s;
-  @include button-theming($button-blue);
+  @extend %button-theming-border;
+  @include button-theming($button-map-primary-color);
 }
 
-%buttons--grey {
+%buttons--terciary-color {
   @extend %buttons;
-  @extend %button-theming-radio-s;
-  @include button-theming($button-grey);
+  @extend %button-theming-border;
+  @include button-theming($button-map-terciary-color);
 }
 
-%buttons--capitalize {
+%buttons--primary-color--capitalize {
+  @extend %buttons--primary-color;
+  text-transform: capitalize;
+}
+
+%buttons--terciary-color--capitalize {
+  @extend %buttons--terciary-color;
   text-transform: capitalize;
 }
