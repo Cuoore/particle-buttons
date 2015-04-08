@@ -13,7 +13,8 @@
     "bower_components"
   ],
   "dependencies": {
-    "particle-theme":"git@github.com:javierlopezdeancos/particle-theme.git#master"
+    "particle-theme":"git@github.com:javierlopezdeancos/particle-theme.git#master",
+    "particle-texts":"git@github.com:javierlopezdeancos/particle-texts.git#master"
   },
   "devDependencies":{
     "particle-higgsboson":"git@github.com:javierlopezdeancos/higgsboson.git#master"

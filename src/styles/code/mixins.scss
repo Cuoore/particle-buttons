@@ -7,3 +7,13 @@
     color: map-get($map-color, "color-hover");
   }
 }
+
+@mixin button-theming-empty($map-color) {
+  border-color: map-get($map-color, "border-color-empty");
+  background: none;
+  color: map-get($map-color, "color-empty");
+  &:hover {
+    border-color: map-get($map-color, "border-color-empty-hover");
+    color: map-get($map-color, "color-empty-hover");
+  }
+}
