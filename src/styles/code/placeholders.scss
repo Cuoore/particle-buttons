@@ -1,14 +1,14 @@
 %bar-button-theming-border {
   border-radius: 0px;
-  border-style: solid;
-  border-width: 1px;
+  border-style: $bar-button-border-style;
+  border-width: $bar-button-border-width;
   &:first-child {
-    border-bottom-left-radius: $button-border-radius;
-    border-top-left-radius: $button-border-radius;
+    border-bottom-left-radius: $bar-button-border-radius;
+    border-top-left-radius: $bar-button-border-radius;
   }
   &:last-child {
-    border-bottom-right-radius: $button-border-radius;
-    border-top-right-radius: $button-border-radius;
+    border-bottom-right-radius: $bar-button-border-radius;
+    border-top-right-radius: $bar-button-border-radius;
   }
 }
 

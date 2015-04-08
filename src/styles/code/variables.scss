@@ -1,7 +1,18 @@
-/**** {{bar-buttons}} ****/
-$bar-buttons-size: $theme-bar-buttons-size;
+/**************************/
+/*                        */
+/*      bar-button        */
+/*                        */
+/**************************/
 
-/*$button-font-size: $button-size;
-$button-border-radius: $theme-button-border-radius;
-$button-padding: $theme-button-padding;
-$button-margin: $theme-button-margin;*/
+/**************************/
+/*     bar-button         */
+/**************************/
+$bar-button-size: $theme-bar-button-size;
+$bar-button-font-size: $theme-bar-button-font-size;
+
+/**************************/
+/*   bar-button--border   */
+/**************************/
+$bar-button-border-style: $theme-bar-button-border-style;
+$bar-button-border-width: $theme-bar-button-border-width;
+$bar-button-border-radius: $theme-bar-button-border-radius;

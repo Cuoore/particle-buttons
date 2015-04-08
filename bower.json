@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "particle-buttons":"git@github.com:javierlopezdeancos/particle-buttons.git#master",
+    "particle-texts":"git@github.com:javierlopezdeancos/particle-texts.git#master",
     "particle-theme":"git@github.com:javierlopezdeancos/particle-theme.git#master"
   },
   "devDependencies":{
