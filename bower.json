@@ -13,8 +13,7 @@
   ],
   "dependencies": {
     "particle-buttons":"git@github.com:Cuoore/particle-buttons.git#master",
-    "particle-texts":"git@github.com:Cuoore/particle-texts.git#master",
-    "particle-theme":"git@github.com:Cuoore/particle-theme.git#master"
+    "particle-texts":"git@github.com:Cuoore/particle-texts.git#master"
   },
   "devDependencies":{
     "particle-higgsboson":"git@github.com:Cuoore/higgsboson.git#master"
