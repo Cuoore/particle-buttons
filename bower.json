@@ -6,18 +6,17 @@
   ],
   "description": "bar build with buttons",
   "license": "MIT",
-  "homepage": "http://javierlopezdeancos.github.io/higgsboson/",
   "private": true,
   "ignore": [
     "node_modules",
     "bower_components"
   ],
   "dependencies": {
-    "particle-buttons":"git@github.com:javierlopezdeancos/particle-buttons.git#master",
-    "particle-texts":"git@github.com:javierlopezdeancos/particle-texts.git#master",
-    "particle-theme":"git@github.com:javierlopezdeancos/particle-theme.git#master"
+    "particle-buttons":"git@github.com:Cuoore/particle-buttons.git#master",
+    "particle-texts":"git@github.com:Cuoore/particle-texts.git#master",
+    "particle-theme":"git@github.com:Cuoore/particle-theme.git#master"
   },
   "devDependencies":{
-    "particle-higgsboson":"git@github.com:javierlopezdeancos/higgsboson.git#master"
+    "particle-higgsboson":"git@github.com:Cuoore/higgsboson.git#master"
   } 
 }
