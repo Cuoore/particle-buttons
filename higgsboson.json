@@ -1,8 +1,37 @@
 {
   "name": "particle-buttons",
+  "higgsparticles":"./bower_components/particle-higgsboson",
   "entryPoint": {
     "styles": "buttons",
     "htmls": "buttons"
+  },
+  "dependencies": {
+    "internals": {
+      "prefix": "particle-"
+    }
+  },
+  "server": {
+    "dev": {
+      "host": "localhost",
+      "url": "http://localhost",
+      "port": 3020,
+      "browser": "chrome"
+    }    
+  },
+  "phantomcss": {
+    "screenshotRoot": "reports/styles/tests/screenshots",
+    "failedComparisonsRoot": "reports/styles/tests/failures",
+    "comparisonResultRoot": "reports/styles/tests/results",
+    "addLabelToFailedImage": true,
+    "outputSettings": {
+      "errorColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 0
+      },
+      "errorType": "movement",
+      "transparency": 0.3
+    },
   },
   "path": {
     "sources": {
@@ -18,9 +47,16 @@
     },
     "tests": {
       "root": "test",
-      "scripts": "test/specs/scripts",
-      "styles": "test/specs/styles",
-      "fixtures": "test/specs/fixtures"
+      "units": {
+        "scripts": "test/units/specs/scripts",
+        "styles": "test/units/specs/styles",
+        "fixtures": "test/units/specs/fixtures"
+      },
+      "integration":{
+        "scripts": "test/integration/specs/scripts",
+        "styles": "test/integration/specs/styles",
+        "fixtures": "test/integration/specs/fixtures"
+      }
     },
     "dependencies": "bower_components",
     "distribution": {
@@ -33,17 +69,5 @@
       "styles": "dev/styles",
       "htmls": "dev/htmls"
     }
-  },
-  "dependencies": {
-    "internals": {
-      "prefix": "particle-"
-    }
-  },
-  "higgsparticles":"./bower_components/particle-higgsboson",
-  "server": {
-    "host": "localhost",
-    "url": "http://localhost",
-    "port": 8000,
-    "browser": "chrome"
   }
 }
