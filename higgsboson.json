@@ -29,9 +29,9 @@
         "green": 255,
         "blue": 0
       },
-      "errorType": "movement",
-      "transparency": 0.3
-    },
+    "errorType": "movement",
+    "transparency": 0.3
+    }
   },
   "path": {
     "sources": {
