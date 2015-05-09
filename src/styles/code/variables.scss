@@ -1,72 +1,72 @@
 /**************************/
 /*                        */
-/*        buton           */
+/*        button           */
 /*                        */
 /**************************/
 
-$button-size: $theme-button-size;
-$button-font-size: $button-size;
-$button-font-family: $theme-text-font-family-sans;
-$button-border-radius: $theme-button-border-radius;
-$button-padding: $theme-button-padding;
-$button-margin: $theme-button-margin;
+$button---size: $theme__button---size;
+$button---font-size: $button---size;
+$button---font-family: $theme__text---font-family-sans;
+$button---border-radius: $theme__button---border-radius;
+$button---padding: $theme__button---padding;
+$button---margin: $theme__button---margin;
 
 /**************************/
-/*  buton--primary-color  */
+/*  button--primary-color  */
 /**************************/
 
-$button-primary-color-background: $theme-button-primary-color-background;
-$button-primary-color-background-hover: darken($theme-button-primary-color-background, 5%);
-$button-primary-color-text: $theme-button-primary-color-text;
-$button-primary-color-text-hover: $theme-button-primary-color-text;
-$button-primary-color-text-empty: $button-primary-color-background;
-$button-primary-color-text-empty-hover: darken($button-primary-color-background, 15%);
-$button-primary-color-border: $button-primary-color-background;
-$button-primary-color-border-empty: $button-primary-color-background;
-$button-primary-color-border-empty-hover: darken($button-primary-color-background, 15%);
+$button--primary-color---background: $theme__button--primary-color---background;
+$button--primary-color--hover---background: darken($theme__button--primary-color---background, 5%);
+$button--primary-color---color: $theme__button--primary-color---color;
+$button--primary-color--hover---color: $button--primary-color---color;
+$button--primary-color--outline---color: $button--primary-color---background;
+$button--primary-color--outline--hover---color: darken($button--primary-color--outline---color, 15%);
+$button--primary-color---border-color: $button--primary-color---background;
+$button--primary-color--outline---border-color: $button--primary-color---background;
+$button--primary-color--outline--hover---border-color: darken($button--primary-color--outline---border-color, 15%);
 
 /**************************/
-/*   buton--primary-map   */
+/*   button--primary-map   */
 /**************************/
 
-$button-map-primary-color: ( 
-	border-color: $button-primary-color-border, 
-	background: $button-primary-color-background, 
-	color: $button-primary-color-text, 
-	background-hover: $button-primary-color-background-hover, 
-	color-hover: $button-primary-color-text-hover, 
-	border-color-empty: $button-primary-color-border-empty, 
-	color-empty: $button-primary-color-text-empty, 
-	border-color-empty-hover: $button-primary-color-border-empty-hover, 
-	color-empty-hover: $button-primary-color-text-empty-hover
+$button---map--primary-color: ( 
+	border-color: $button--primary-color---border-color, 
+	background: $button--primary-color---background, 
+	color: $button--primary-color---color, 
+	background-hover: $button--primary-color--hover---background, 
+	color-hover: $button--primary-color--hover---color, 
+	border-color-outline: $button--primary-color--outline---border-color, 
+	color-outline: $button--primary-color--outline---color, 
+	border-color-outline-hover: $button--primary-color--outline---border-color, 
+	color-outline-hover: $button--primary-color--outline--hover---color
 	);
 
 /**************************/
 /*  buton--tertiary-color */
 /**************************/
 
-$button-tertiary-color-background: $theme-button-tertiary-color-background;
-$button-tertiary-color-background-hover: darken($theme-button-tertiary-color-background, 5%);
-$button-tertiary-color-text: $theme-button-tertiary-color-text;
-$button-tertiary-color-text-hover: darken($theme-button-tertiary-color-text, 15%);
-$button-tertiary-color-text-empty: $button-tertiary-color-background;
-$button-tertiary-color-text-empty-hover: darken($button-tertiary-color-background, 10%);
-$button-tertiary-color-border: $button-tertiary-color-background;
-$button-tertiary-color-border-empty: $button-tertiary-color-background;
-$button-tertiary-color-border-empty-hover: darken($button-tertiary-color-background, 10%);
+$button--tertiary-color---background: $theme__button--tertiary-color---background;
+$button--tertiary-color--hover---background: darken($theme__button--tertiary-color---background, 5%);
+$button--tertiary-color---color: $theme__button--tertiary-color---color;
+$button--tertiary-color--hover---color: darken($theme__button--tertiary-color---color, 15%);
+$button--tertiary-color--outline-color: $button--tertiary-color---background;
+$button--tertiary-color--outline--hover-color: darken($button--tertiary-color---background, 10%);
+$button--tertiary-color---border-color: $button--tertiary-color---background;
+$button--tertiary-color--outline---border-color: $button--tertiary-color---background;
+$button--tertiary-color--outline--hover---border-color: darken($button--tertiary-color---background, 10%);
 
 /**************************/
 /*  buton--tertiary-map   */
 /**************************/
 
-$button-map-tertiary-color: (
-	border-color: $button-tertiary-color-border, 
-	background: $button-tertiary-color-background, 
-	color: $button-tertiary-color-text, 
-	background-hover: $button-tertiary-color-background-hover, c
-	olor-hover: $button-tertiary-color-text-hover, 
-	border-color-empty: $button-tertiary-color-border-empty, 
-	color-empty: $button-tertiary-color-text-empty, 
-	border-color-empty-hover: $button-tertiary-color-border-empty-hover, 
-	color-empty-hover: $button-tertiary-color-text-empty-hover
+$button---map--tertiary-color: (
+	border-color: $button--tertiary-color---border-color, 
+	background: $button--tertiary-color---background, 
+	color: $button--tertiary-color---color, 
+	background-hover: $button--tertiary-color--hover---background, 
+	color-hover: $button--tertiary-color--hover---color, 
+	border-color-outline: $button--tertiary-color--outline---border-color, 
+	color-outline: $button--tertiary-color--outline-color, 
+	border-color-outline-hover: $button--tertiary-color--outline--hover---border-color, 
+	color-outline-hover: $button--tertiary-color--outline--hover-color
 );

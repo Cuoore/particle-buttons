@@ -1,0 +1,6 @@
+####################################################
+#  configuration true framework to sass unit test  #
+####################################################
+
+options:
+  color: true #enables colored output 

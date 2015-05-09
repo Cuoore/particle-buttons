@@ -5,20 +5,20 @@
 /*
 higgsboson set this variable with correct value in each case
 you only write this:
-var url='http://localhost:3020';
+var url='http://localhost:3000';
 */
 
-var url = 'http://localhost:3020';
+var url='http://localhost:3000';
 
 /*
 Options an optimizations to 
 phatomcss;
 higgsboson set this variable with correct value in each case
 you only write this:
-var url='http://localhost:3020';
+var url='http://localhost:3000';
 */
 
-var configuration = {"screenshotRoot":"reports/styles/tests/screenshots", "failedComparisonsRoot":"reports/styles/tests/failures", "comparisonResultRoot":"reports/styles/tests//results", "addLabelToFailedImage":true, "outputSettings":{"errorColor":{"red":255, "green":255, "blue":0}, "errorType":"movement", "transparency":0.3}};
+var configuration={"screenshotRoot":"reports/styles/tests/screenshots","failedComparisonsRoot":"reports/styles/tests/failures","comparisonResultRoot":"reports/styles/tests/results","addLabelToFailedImage":true,"outputSettings":{"errorColor":{"red":255,"green":255,"blue":0},"errorType":"movement","transparency":0.3}};
 
 phantomcss.init(configuration);
 

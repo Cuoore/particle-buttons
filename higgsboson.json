@@ -14,7 +14,7 @@
     "dev": {
       "host": "localhost",
       "url": "http://localhost",
-      "port": 3020,
+      "port": 3000,
       "browser": "chrome"
     }    
   },

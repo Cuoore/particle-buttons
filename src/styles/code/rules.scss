@@ -1,0 +1,14 @@
+button, .button {
+  &--primary-color {
+   @extend %buttons--primary-color;
+  }
+  &--primary-color--outline {
+  	@extend %buttons--primary-color--outline;
+  }
+  &--tertiary-color {
+  	@extend %buttons--tertiary-color;
+  }
+  &--tertiary-color--outline {
+  	@extend %buttons--tertiary-color--outline;
+  }
+}

@@ -8,12 +8,12 @@
   }
 }
 
-@mixin button-theming-empty($map-color) {
-  border-color: map-get($map-color, "border-color-empty");
+@mixin button-theming-outline($map-color) {
+  border-color: map-get($map-color, "border-color-outline");
   background: none;
-  color: map-get($map-color, "color-empty");
+  color: map-get($map-color, "color-outline");
   &:hover {
-    border-color: map-get($map-color, "border-color-empty-hover");
-    color: map-get($map-color, "color-empty-hover");
+    border-color: map-get($map-color, "border-color-outline-hover");
+    color: map-get($map-color, "color-outline-hover");
   }
 }

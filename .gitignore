@@ -1,5 +1,6 @@
 .DS_Store
 .temp
+.sass-cache
 dev
 node_modules
 bower_components
