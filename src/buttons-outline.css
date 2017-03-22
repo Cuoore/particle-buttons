@@ -1,0 +1,190 @@
+@import "./buttons-primary.css";
+@import "./buttons-secondary.css";
+
+:root {
+    --btn-outline---display:                            var(--btn-primary---display);
+    --btn-outline---padding:                            var(--btn-primary---padding);;
+    --btn-outline---margin:                             var(--btn-primary---margin);
+    --btn-outline---min-width:                          var(--btn-primary---min-width);
+    --btn-outline---vertical-align:                     var(--btn-primary---vertical-align);
+    --btn-outline---color:                              var(--btn-primary---background);;
+    --btn-outline---font-size:                          var(--btn-primary---font-size);
+    --btn-outline---line-height:                        var(--btn-primary---line-height);
+    --btn-outline---font-weight:                        var(--btn-primary---font-weight);
+    --btn-outline---font-style:                         var(--btn-primary---font-style);
+    --btn-outline---letter-spacing:                     var(--btn-primary---letter-spacing);
+    --btn-outline---text-align:                         var(--btn-primary---text-align);
+    --btn-outline---text-decoration:                    var(--btn-primary---text-decoration);
+    --btn-outline---text-shadow:                        var(--btn-primary---text-shadow);
+    --btn-outline---text-transform:                     var(--btn-primary---text-transform);
+    --btn-outline---border-width:                       var(--theme-btn-outline---border-width);
+    --btn-outline---border-style:                       solid;
+    --btn-outline---border-color:                       var(--btn-primary---background);
+    --btn-outline---border-radius:                      var(--btn-primary---border-radius);
+    --btn-outline---background:                         var(--theme-btn-outline---background);
+    --btn-outline---box-shadow:                         var(--btn-primary---box-shadow);
+    --btn-outline---transition:                         all 0.3s ease;
+    --btn-outline--hover---color:                       color(var(--btn-outline---color) blackness(40%));
+    --btn-outline--hover---border-color:                color(var(--btn-outline---border-color) blackness(40%));
+    --btn-outline--hover---cursor:                      var(--btn-primary--hover---cursor);
+    --btn-outline--active---border-color:               var(--btn-outline--hover---border-color);
+    --btn-outline--active---outline:                    none;
+    --btn-outline--focus---outline:                     none;
+    --btn-outline--disabled---color:                    color(var(--btn-outline---border-color) alpha(-80%));
+    --btn-outline--disabled---border-color:             color(var(--btn-outline---border-color) alpha(-80%));
+    --btn-outline--disabled---opacity:                  var(--btn-primary---opacity);
+    --btn-outline--disabled---cursor:                   var(--btn-primary--disabled---cursor);
+    --btn-outline--large---padding:                     12px 25px;
+    --btn-outline--large---font-size:                   calc(var(--btn-outline---font-size)-3);
+    --btn-outline--small---padding:                     8px 15px;
+    --btn-outline--small---font-size:                   calc(var(--btn-outline---font-size)-8);
+    --btn-outline--secondary---color:                   #037094;
+    --btn-outline--secondary---border-color:            var(--btn-outline--secondary---color);
+    --btn-outline--secondary--hover---color:            #244f5d;
+    --btn-outline--secondary--hover---border-color:     var(--btn-outline--secondary--hover---color);
+    --btn-outline--secondary--active---border-color:    var(--btn-outline--secondary--hover---border-color);
+    --btn-outline--secondary--disabled---color:         color(var(--btn-secondary---background) alpha(-40%));
+    --btn-outline--secondary--disabled---border-color:  color(var(--btn-secondary---background) alpha(-40%));
+    --btn-outline-position: {
+        display:                    var(--btn-outline---display);
+        margin:                     var(--btn-outline---margin);
+        padding:                    var(--btn-outline---padding);
+        vertical-align:             var(--btn-outline---vertical-align);
+    };
+    --btn-outline-font: {
+        color:              var(--btn-outline---color);
+        font-size:          var(--btn-outline---font-size);
+        line-height:        var(--btn-outline---line-height);
+        font-weight:        var(--btn-outline---font-weight);
+        font-style:         var(--btn-outline---font-style);
+        letter-spacing:     var(--btn-outline---letter-spacing);
+        text-align:         var(--btn-outline---text-align);
+        text-decoration:    var(--btn-outline---text-decoration);
+        text-shadow:        var(--btn-outline---text-shadow);
+        text-transform:     var(--btn-outline---text-transform);
+    };
+    --btn-outline-border: {
+        border-width:       var(--btn-outline---border-width);
+        border-style:       var(--btn-outline---border-style);
+        border-color:       var(--btn-outline---border-color);
+        border-radius:      var(--btn-outline---border-radius);
+    };
+    --btn-outline-box: {
+        background:         var(--btn-outline---background);
+        box-shadow:         var(--btn-outline---box-shadow);
+    };
+    --btn-outline-animations: {
+        transition:         var(--btn-outline---transition);
+    };
+    --btn-outline-state-hover: {
+        color:              var(--btn-outline--hover---color);
+        border-color:       var(--btn-outline--hover---border-color);
+        cursor:             var(--btn-outline--hover---cursor);
+    };
+    --btn-outline-state-active: {
+        border-color:       var(--btn-outline--active---border-color);
+        outline:            var(--btn-outline--active---outline);
+    };
+    --btn-outline-state-focus: {
+        outline:            var(--btn-outline--focus---outline);
+    };
+    --btn-outline-state-disabled: {
+        color:              var(--btn-outline--disabled---color);
+        border-color:       var(--btn-outline--disabled---border-color);
+        cursor:             var(--btn-outline--disabled---cursor);
+    };
+    --btn-outline-size-large: {
+        padding:            var(--btn-outline--large---padding);
+        font-size:          var(--btn-outline--large---font-size);
+    };
+    --btn-outline-size-small: {
+        padding:            var(--btn-outline--small---padding);
+        font-size:          var(--btn-outline--small---font-size);
+    };
+    --btn-outline-type-secondary: {
+        color:              var(--btn-outline--secondary---color);
+        border-color:       var(--btn-outline--secondary---border-color);
+    };
+    --btn-outline-type-secondary-state-hover: {
+        color:              var(--btn-outline--secondary--hover---color);
+        border-color:       var(--btn-outline--secondary--hover---border-color);           
+    };
+    --btn-outline-type-secondary-state-active: {
+        border-color:       var(--btn-outline--secondary--active---border-color);
+    };
+    --btn-outline-type-secondary-state-disabled: {
+        color:              var(--btn-outline--secondary--disabled---color);
+        border-color:       var(--btn-outline--secondary--disabled---border-color);
+    };
+}
+
+.vui-btn-outline {
+
+    @apply --btn-reset-appearance;
+    @apply --btn-outline-position;
+    @apply --btn-outline-font;
+    @apply --btn-outline-border;
+    @apply --btn-outline-box;
+    @apply --btn-outline-animations;
+
+    &:hover {
+        @apply --btn-outline-state-hover;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+        @apply --btn-outline-state-active;
+    }
+
+    &:focus {
+        @apply --btn-outline-state-focus;
+    }
+
+    &.disabled {
+        @apply --btn-outline-state-disabled;
+    } 
+
+    &fieldset[disabled] {
+        @apply --btn-outline-state-disabled;
+    }
+
+    &[disabled] {
+        @apply --btn-outline-state-disabled;
+    }
+
+    &--l {
+        @apply --btn-outline-size-large;
+    }
+
+    &--s {
+        @apply --btn-outline-size-small;
+    }
+
+    &--secondary {
+
+        @apply --btn-outline-type-secondary;
+
+        &:hover {
+            @apply --btn-outline-type-secondary-state-hover;
+        }
+
+        &:active {
+            @apply --btn-outline-type-secondary-state-active;
+        }
+
+        &.disabled {
+            @apply --btn-outline-type-secondary-state-disabled;
+        } 
+
+        &fieldset[disabled] {
+            @apply --btn-outline-type-secondary-state-disabled;
+        }
+
+        &[disabled] {
+            @apply --btn-outline-type-secondary-state-disabled;
+        }
+
+    } 
+
+}

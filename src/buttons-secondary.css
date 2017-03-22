@@ -1,0 +1,146 @@
+@import "./buttons.css";
+
+:root {
+    --btn-secondary---display:                 var(--btn---display);
+    --btn-secondary---padding:                 var(--theme-btn-secondary---padding);
+    --btn-secondary---margin:                  var(--btn---margin);
+    --btn-secondary---min-width:               var(--btn---min-width);
+    --btn-secondary---vertical-align:          var(--btn---vertical-align);
+    --btn-secondary---color:                   var(--theme-btn-secondary---color);
+    --btn-secondary---font-size:               var(--btn---font-size);
+    --btn-secondary---line-height:             var(--btn---line-height);
+    --btn-secondary---font-weight:             var(--btn---font-weight);
+    --btn-secondary---font-style:              var(--btn---font-style);
+    --btn-secondary---letter-spacing:          var(--btn---letter-spacing);
+    --btn-secondary---text-align:              var(--btn---text-align);
+    --btn-secondary---text-decoration:         var(--btn---text-decoration);
+    --btn-secondary---text-shadow:             var(--btn---text-shadow);
+    --btn-secondary---text-transform:          var(--btn---text-transform);
+    --btn-secondary---border-width:            var(--btn---border-width);
+    --btn-secondary---border-style:            var(--btn---border-style);
+    --btn-secondary---border-color:            var(--btn---border-color);
+    --btn-secondary---border-radius:           var(--btn---border-radius);
+    --btn-secondary---background:              var(--theme-btn-secondary---background);
+    --btn-secondary---box-shadow:              var(--btn---box-shadow);
+    --btn-secondary---transition:              var(--theme-btn-secondary---transition);
+    --btn-secondary--hover---color:            var(--theme-btn-secondary--hover---color);
+    --btn-secondary--hover---border-color:     color(var(--btn-secondary---border-color) blackness(20%));
+    --btn-secondary--hover---background:       var(--theme-btn-secondary--hover---background);
+    --btn-secondary--hover---cursor:           var(--btn--hover---cursor);
+    --btn-secondary--active---background:      var(--btn-secondary--hover---background);
+    --btn-secondary--active---border-color:    var(--btn-secondary--hover---border-color);
+    --btn-secondary--active---outline:         none;
+    --btn-secondary--active---box-shadow:      var(--btn-secondary---background);
+    --btn-secondary--focus---outline:          none;
+    --btn-secondary--focus---box-shadow:       var(--btn-secondary---background);
+    --btn-secondary--disabled---background:    color(var(--btn-secondary---background) alpha(-40%));
+    --btn-secondary--disabled---opacity:       var(--btn--disabled---opacity);
+    --btn-secondary--disabled---cursor:        var(--btn--disabled---cursor);
+    --btn-secondary--large---padding:          var(--theme-btn-secondary--large---padding);
+    --btn-secondary--large---font-size:        calc(var(--btn-secondary---font-size)-3);
+    --btn-secondary--small---padding:          var(--theme-btn-secondary--small---padding);
+    --btn-secondary--small---font-size:        calc(var(--btn-secondary---font-size)-8);
+    --btn-secondary-position: {
+        display:                    var(--btn-secondary---display);
+        margin:                     var(--btn-secondary---margin);
+        padding:                    var(--btn-secondary---padding);
+        vertical-align:             var(--btn-secondary---vertical-align);
+    };
+    --btn-secondary-font: {
+        color:              var(--btn-secondary---color);
+        font-size:          var(--btn-secondary---font-size);
+        line-height:        var(--btn-secondary---line-height);
+        font-weight:        var(--btn-secondary---font-weight);
+        font-style:         var(--btn-secondary---font-style);
+        letter-spacing:     var(--btn-secondary---letter-spacing);
+        text-align:         var(--btn-secondary---text-align);
+        text-decoration:    var(--btn-secondary---text-decoration);
+        text-shadow:        var(--btn-secondary---text-shadow);
+        text-transform:     var(--btn-secondary---text-transform);
+    };
+    --btn-secondary-border: {
+        border-width:       var(--btn-secondary---border-width);
+        border-style:       var(--btn-secondary---border-style);
+        border-color:       var(--btn-secondary---border-color);
+        border-radius:      var(--btn-secondary---border-radius);
+    };
+    --btn-secondary-box: {
+        background:         var(--btn-secondary---background);
+        box-shadow:         var(--btn-secondary---box-shadow);
+    };
+    --btn-secondary-animations: {
+        transition:         var(--btn-secondary---transition);
+    };
+    --btn-secondary-state-hover: {
+        color:              var(--btn-secondary--hover---color);
+        border-color:       var(--btn-secondary--hover---border-color);
+        background:         var(--btn-secondary--hover---background);
+        cursor:             var(--btn-secondary--hover---cursor);
+    };
+    --btn-secondary-state-active: {
+        background:         var(--btn-secondary--active---background);
+        border-color:       var(--btn-secondary--active---border-color);
+        outline:            var(--btn-secondary--active---outline);
+    };
+    --btn-secondary-state-focus: {
+        outline:            var(--btn-secondary--focus---outline);
+    };
+    --btn-secondary-state-disabled: {
+        background:         var(--btn-secondary--disabled---background);
+        opacity:            var(--btn-secondary--disabled---opacity);
+        cursor:             var(--btn-secondary--disabled---cursor);
+    };
+    --btn-secondary-size-large: {
+        padding:            var(--btn-secondary--large---padding);
+        font-size:          var(--btn-secondary--large---font-size);
+    }
+    --btn-secondary-size-small: {
+        padding:            var(--btn-secondary--small---padding);
+        font-size:          var(--btn-secondary--small---font-size);
+    }
+}
+
+.vui-btn-secondary {
+
+    @apply --btn-reset-appearance;
+    @apply --btn-secondary-position;
+    @apply --btn-secondary-font;
+    @apply --btn-secondary-border;
+    @apply --btn-secondary-box;
+    @apply --btn-secondary-animations;
+
+    &:hover {
+        @apply --btn-secondary-state-hover;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+        @apply --btn-secondary-state-active;
+    }
+
+    &:focus {
+        @apply --btn-secondary-state-focus;
+    }
+
+    &.disabled {
+        @apply --btn-secondary-state-disabled;
+    } 
+
+    &fieldset[disabled] {
+        @apply --btn-secondary-state-disabled;
+    }
+
+    &[disabled] {
+        @apply --btn-secondary-state-disabled;
+    }
+
+    &--l {
+        @apply --btn-secondary-size-large;
+    }
+
+    &--s {
+        @apply --btn-secondary-size-small;
+    }
+
+}

@@ -1,0 +1,144 @@
+@import "./buttons.css";
+
+:root {
+    --btn-primary---display:                 var(--btn---display);
+    --btn-primary---padding:                 var(--theme-btn-primary---padding);
+    --btn-primary---margin:                  var(--btn---margin);
+    --btn-primary---min-width:               var(--btn---min-width);
+    --btn-primary---vertical-align:          var(--btn---vertical-align);
+    --btn-primary---color:                   var(--theme-btn-primary---color);
+    --btn-primary---font-size:               var(--btn---font-size);
+    --btn-primary---line-height:             var(--btn---line-height);
+    --btn-primary---font-weight:             var(--btn---font-weight);
+    --btn-primary---font-style:              var(--btn---font-style);
+    --btn-primary---letter-spacing:          var(--btn---letter-spacing);
+    --btn-primary---text-align:              var(--btn---text-align);
+    --btn-primary---text-decoration:         var(--btn---text-decoration);
+    --btn-primary---text-shadow:             var(--btn---text-shadow);
+    --btn-primary---text-transform:          var(--btn---text-transform);
+    --btn-primary---border-width:            var(--btn---border-width);
+    --btn-primary---border-style:            var(--btn---border-style);
+    --btn-primary---border-color:            var(--btn---border-color);
+    --btn-primary---border-radius:           var(--btn---border-radius);
+    --btn-primary---background:              var(--theme-btn-primary---background);
+    --btn-primary---box-shadow:              var(--btn---box-shadow);
+    --btn-primary---transition:              var(--theme-btn-primary---transition);
+    --btn-primary--hover---color:            var(--btn-primary---color);
+    --btn-primary--hover---border-color:     color( var(--btn-primary---border-color) blackness(20%) );
+    --btn-primary--hover---background:       color( var(--btn-primary---background) blackness(20%) );
+    --btn-primary--hover---cursor:           var(--btn--hover---cursor);
+    --btn-primary--active---background:      var(--btn-primary--hover---background);
+    --btn-primary--active---border-color:    var(--btn-primary--hover---border-color);
+    --btn-primary--active---outline:         none;
+    --btn-primary--focus---outline:          none;
+    --btn-primary--disabled---background:    color( var(--btn-primary---background) alpha(-40%) );
+    --btn-primary--disabled---opacity:       var(--btn--disabled---opacity);
+    --btn-primary--disabled---cursor:        var(--btn--disabled---cursor);
+    --btn-primary--large---padding:          var(--theme-btn-primary--large---padding);
+    --btn-primary--large---font-size:        calc( var(--btn-primary---font-size)-3 );
+    --btn-primary--small---padding:          var(--theme-btn-primary--small---padding);
+    --btn-primary--small---font-size:        calc( var(--btn-primary---font-size)-8 );
+    --btn-primary-position: {
+        display:            var(--btn-primary---display);
+        margin:             var(--btn-primary---margin);
+        padding:            var(--btn-primary---padding);
+        vertical-align:     var(--btn-primary---vertical-align);
+    };
+    --btn-primary-font: {
+        color:              var(--btn-primary---color);
+        font-size:          var(--btn-primary---font-size);
+        line-height:        var(--btn-primary---line-height);
+        font-weight:        var(--btn-primary---font-weight);
+        font-style:         var(--btn-primary---font-style);
+        letter-spacing:     var(--btn-primary---letter-spacing);
+        text-align:         var(--btn-primary---text-align);
+        text-decoration:    var(--btn-primary---text-decoration);
+        text-shadow:        var(--btn-primary---text-shadow);
+        text-transform:     var(--btn-primary---text-transform);
+    };
+    --btn-primary-border: {
+        border-width:       var(--btn-primary---border-width);
+        border-style:       var(--btn-primary---border-style);
+        border-color:       var(--btn-primary---border-color);
+        border-radius:      var(--btn-primary---border-radius);
+    };
+    --btn-primary-box: {
+        background:         var(--btn-primary---background);
+        box-shadow:         var(--btn-primary---box-shadow);
+    };
+    --btn-primary-animations: {
+        transition:         var(--btn-primary---transition);
+    };
+    --btn-primary-state-hover: {
+        color:              var(--btn-primary--hover---color);
+        border-color:       var(--btn-primary--hover---border-color);
+        background:         var(--btn-primary--hover---background);
+        cursor:             var(--btn-primary--hover---cursor);
+    };
+    --btn-primary-state-active: {
+        background:         var(--btn-primary--active---background);
+        border-color:       var(--btn-primary--active---border-color);
+        outline:            var(--btn-primary--active---outline);
+    };
+    --btn-primary-state-focus: {
+        outline:            var(--btn-primary--focus---outline);
+    };
+    --btn-primary-state-disabled: {
+        background:         var(--btn-primary--disabled---background);
+        opacity:            var(--btn-primary--disabled---opacity);
+        cursor:             var(--btn-primary--disabled---cursor);
+    };
+    --btn-primary-size-large: {
+        padding:            var(--btn-primary--large---padding);
+        font-size:          var(--btn-primary--large---font-size);
+    }
+    --btn-primary-size-small: {
+        padding:            var(--btn-primary--small---padding);
+        font-size:          var(--btn-primary--small---font-size);
+    }
+}
+
+.vui-btn-primary {
+
+    @apply --btn-reset-appearance;
+    @apply --btn-primary-position;
+    @apply --btn-primary-font;
+    @apply --btn-primary-border;
+    @apply --btn-primary-box;
+    @apply --btn-primary-animations;
+
+    &:hover {
+        @apply --btn-primary-state-hover;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+        @apply --btn-primary-state-active;
+    }
+
+    &:focus {
+        @apply --btn-primary-state-focus;
+    }
+
+    &.disabled {
+        @apply --btn-primary-state-disabled;
+    } 
+
+    &fieldset[disabled] {
+        @apply --btn-primary-state-disabled;
+    }
+
+    &[disabled] {
+        @apply --btn-primary-state-disabled;
+    }
+
+    &--l {
+        @apply --btn-primary-size-large;
+    }
+
+    &--s {
+        @apply --btn-primary-size-small;
+    }
+
+}

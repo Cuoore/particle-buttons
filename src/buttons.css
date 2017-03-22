@@ -1,0 +1,150 @@
+:root {
+    --btn---display:                inline-block;
+    --btn---margin:                 var(--theme-btn---margin:);
+    --btn---padding:                var(--theme-btn---padding);
+    --btn---min-width:              var(--theme-btn---min-width);
+    --btn---vertical-align:         middle;
+    --btn---color:                  var(--theme-btn---color);
+    --btn---font-size:              var(--theme-btn---font-size);
+    --btn---line-height:            1;
+    --btn---font-weight:            bold;
+    --btn---font-style:             normal;
+    --btn---letter-spacing:         inherit;
+    --btn---text-align:             center;
+    --btn---text-decoration:        none;
+    --btn---text-shadow:            none;
+    --btn---text-transform:         none;
+    --btn---border-width:           0;
+    --btn---border-style:           none;
+    --btn---border-color:           transparent;
+    --btn---border-radius:          0;
+    --btn---background:             transparent;
+    --btn---box-shadow:             none;
+    --btn---transition:             none;
+    --btn--large---padding:         var(--theme-btn--large---padding);
+    --btn--hover---text-decoration: var(--btn---text-decoration);
+    --btn--hover---border-color:    var(--btn---border-color);
+    --btn--hover---color:           var(--btn---color);
+    --btn--hover---background:      var(--btn---background);
+    --btn--hover---box-shadow:      var(--btn---box-shadow);
+    --btn--hover---cursor:          pointer;
+    --btn--active---border-color:   var(--btn--hover---border-color);
+    --btn--active---outline:        none;
+    --btn--active---background:     var(--btn--hover---background);
+    --btn--active---box-shadow:     none;
+    --btn--focus---outline:         var(--btn--active---outline);
+    --btn--focus---box-shadow:      none;
+    --btn--disabled---color:        var(--btn---color);
+    --btn--disabled---background:   var(--btn---background);
+    --btn--disabled---opacity:      0.4;
+    --btn--disabled---box-shadow:   none;
+    --btn--disabled---cursor:       not-allowed;
+    --btn-reset-appearance: {
+        -webkit-appearance:         none;
+        -moz-appearance:            none;
+    } 
+    --btn-position: {
+        display:                    inline-block;
+        margin:                     var(--btn---margin);
+        padding:                    var(--btn---padding);
+        vertical-align:             var(--btn---vertical-align);
+    };
+    --btn-font: {
+        color:                      var(--btn---color);
+        font-size:                  var(--btn---font-size);
+        line-height:                var(--btn---line-height);
+        font-weight:                var(--btn---font-weight);
+        font-style:                 var(--btn---font-style);
+        letter-spacing:             var(--btn---letter-spacing);
+        text-align:                 var(--btn---text-align);
+        text-decoration:            var(--btn---text-decoration);
+        text-shadow:                var(--btn---text-shadow);
+        text-transform:             var(--btn---text-transform);
+    };
+    --btn-border: {
+        border-width:               var(--btn---border-width);
+        border-style:               var(--btn---border-style);
+        border-color:               var(--btn---border-color);
+        border-radius:              var(--btn---border-radius);
+    };
+    --btn-box: {
+        background:                 var(--btn---background);
+        box-shadow:                 var(--btn---box-shadow);
+    };
+    --btn-animations: {
+        cursor:                     pointer;
+        transition:                 var(--btn---transition);
+    };
+    --btn-state-hover: {
+        text-decoration:            var(--btn--hover---text-decoration);
+        border-color:               var(--btn--hover---border-color);
+        color:                      var(--btn--hover---color);
+        background:                 var(--btn--hover---background);
+        box-shadow:                 var(--btn--hover---box-shadow);
+        cursor:                     var(--btn--hover---cursor);
+    };
+    --btn-state-active: {
+        border-color:               var(--btn--active---border-color);
+        outline:                    var(--btn--active---outline);
+        background:                 var(--btn--active---background);
+        box-shadow:                 var(--btn--active---box-shadow);
+    };
+    --btn-state-focus: {
+        outline:                    var(--btn--focus---outline);
+        box-shadow:                 var(--btn--focus---box-shadow);
+    };
+    --btn-state-visited: {
+        color:                      var(--btn---color);
+    };
+    --btn-state-disabled: {
+        cursor:                     not-allowed;
+        pointer-events:             none;
+        color:                      var(--btn--disabled---color);
+        opacity:                    var(--btn--disabled---opacity);
+        box-shadow:                 var(--btn--disabled---box-shadow);
+    };
+    --btn-size-large: {
+        padding:                    var(--btn--large---padding);
+    };
+}
+
+.vui-btn {
+
+    @apply --btn-reset-appearance;
+    @apply --btn-position;
+    @apply --btn-font;
+    @apply --btn-box;
+    @apply --btn-animations;
+
+    &:hover {
+        @apply --btn-state-hover;
+    }
+
+    &:active,
+    &:focus,
+    &:focus:active {
+        @apply --btn-state-focus;
+        @apply --btn-state-active;
+    }
+
+    &:visited {
+        @apply --btn-state-visited;
+    }
+
+    &.disabled {
+        @apply --btn-state-disabled;
+    } 
+
+    &fieldset[disabled] {
+        @apply --btn-state-disabled;
+    }
+
+    &[disabled] {
+        @apply --btn-state-disabled;
+    }
+
+    &--l {
+        @apply  --btn-size-large;
+    }
+
+}
