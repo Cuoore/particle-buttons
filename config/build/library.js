@@ -1,4 +1,4 @@
-const PREFIX = 'vui-'
+const PREFIX = 'cuoore-particle-'
 
 const LIBRARY = {
     PREFIX: PREFIX,

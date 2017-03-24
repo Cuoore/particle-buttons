@@ -3,12 +3,11 @@ const path = require('path')
 const PATHS = require('./paths')
 
 const DEVELOPMENT = {
-    publicPath:         path.join(path.normalize(__dirname + '/../..') , "src"),
-    contentBase:        path.join(path.normalize(__dirname + '/../..') , "src"),
+    contentBase: path.resolve(__dirname, PATHS.CONTEXT),
     historyApiFallback: true,
-    inline:             true,
-    stats:              "errors-only",
-    clientLogLevel:     'error',
+    hot: true,
+    stats: "errors-only",
+    clientLogLevel: 'error',
 }
 
 const SERVER = {

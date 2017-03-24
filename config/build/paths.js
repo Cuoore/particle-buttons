@@ -1,6 +1,7 @@
 const CONTEXT = '../../'
 const SRC = 'src'
 const DIST = 'dist'
+const PUBLIC = 'public'
 const ASSETS = 'assets'
 const DEPENDENCIES = 'node_modules'
 
@@ -9,7 +10,8 @@ PATHS = {
     ASSETS,
     SRC,
     DIST,
-    DEPENDENCIES
+    PUBLIC,
+    DEPENDENCIES,
 }
 
 module.exports = PATHS
